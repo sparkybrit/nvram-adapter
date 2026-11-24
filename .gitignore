@@ -1,0 +1,14 @@
+# KiCad per-user view settings, backups and locks
+*.kicad_prl
+*-backups
+~*.lck
+_autosave-*
+*.bak
+fp-info-cache
+
+# Generated outputs
+gerbers/
+*.net
+*.dsn
+*.ses
+*.rpt

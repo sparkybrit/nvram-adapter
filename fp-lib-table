@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "nvram-adapter")(type "KiCad")(uri "${KIPRJMOD}/lib/nvram-adapter.pretty")(options "")(descr "TSOP-II-44 and the BU2032SM holder"))
+)

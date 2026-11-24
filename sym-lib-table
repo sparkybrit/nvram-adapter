@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "nvram-adapter")(type "KiCad")(uri "${KIPRJMOD}/lib/nvram-adapter.kicad_sym")(options "")(descr "This board's SRAM and supervisor"))
+)
