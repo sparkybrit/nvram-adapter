@@ -12,3 +12,6 @@ gerbers/
 *.dsn
 *.ses
 *.rpt
+
+# Prints for checking parts against footprints (kicad-cli pcb export pdf)
+prints/
