@@ -140,10 +140,12 @@ chip's supply pins (Sparky1's "Improve decoupling capacitor placement"). So here
 the **bottom side, directly under U1's two VCC/VSS pairs** (pins 11/12 and 33/34), C3 (10 µF) is at U2's OUT, C1
 (100 nF) at U2's VCC and C2 (10 µF) is +5 V bulk.
 
-**No copper on F.Cu under the cell.** A CR2032's can is its positive terminal; a rule area keeps tracks, vias and
-fill out of a 20.6 mm circle under BT1. A second rule area (`BT1 spring finger`, about 8.5 × 7 mm, from 4.5 mm
-right of BT1's centre to pad 2) keeps tracks and vias, but not the GND fill, out from under the holder's negative
-spring: it sits over a window in the holder's floor and can be pushed down onto the board by the cell.
+**Under the cell holder.** The holder has a plastic floor between the cell and the board, and MPD's drawing asks for
+no keep-out (it marks the centre as an optional area for adhesive), so copper may run under BT1. The 20.6 mm
+no-copper circle that used to be there was removed on 2026-11-25. One rule area remains, `BT1 spring finger`
+(about 8.5 × 7 mm, from 4.5 mm right of BT1's centre to pad 2): it keeps tracks and vias, but not the GND fill,
+out from under the holder's negative spring, which sits over a window in the floor and can be pushed down onto
+the board by the cell.
 
 ## The board
 
@@ -161,7 +163,7 @@ spring: it sits over a window in the holder's floor and can be pushed down onto 
 
 ### Status
 
-**The schematic is complete; the board is placed, with its planes and fills, but not routed** (49 unconnected
+**The schematic is complete; the board is placed, with its planes and fills, but not routed** (50 unconnected
 items at the last DRC). With no autorouter installed, routing is to be done interactively in KiCad's PCB editor.
 U1's address and data pins are mixed on both of its sides, so expect to cross between F.Cu and B.Cu; the space
 under U1 on B.Cu is free apart from C4 and C5.
